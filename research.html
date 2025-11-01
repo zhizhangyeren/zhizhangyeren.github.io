@@ -66,8 +66,19 @@
       grid-template-columns: 1fr;
       gap: 1.25rem;
     }
-    @media (min-width: 820px) {
-      .projects { grid-template-columns: 1fr 1fr; }
+    .projects {
+      display: block;           /* stack children vertically */
+    }
+    
+    .project {
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.25rem;   /* space between projects */
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
     }
 
     .project {
@@ -145,12 +156,12 @@
       datasets, we accelerate the development and deployment 
       of materials for energy and extreme environments by uncovering the hidden 
       roles of microstructure and transforming the PMP relationship into actionable design insight.
+      Specific topics include:
     </p>
     <ul>
-      <li>Mesoscale evolution: defect-mediated transformation, coarsening, and damage localization</li>
-      <li>Architected materials: spinodal-inspired bicontinuous networks for energy/structural applications</li>
-      <li>Processing–Microstructure–Property (PMP) mapping via physics-informed ML</li>
-      <li>Design under constraints: co-optimizing transport, mechanics, and manufacturability</li>
+      <li>Architected metamaterials for energy storage applications</li>
+      <li>Mesoscale modeling of phase transformation and deformation in structural alloys</li>
+      <li>Microstructure–Property relationship in porous polymeric membranes and solid state batteries</li>
     </ul>
   </div>
 
