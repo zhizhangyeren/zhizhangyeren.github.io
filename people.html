@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>People | M2D2 Lab</title>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 2rem auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      color: #222;
+    }
+    header {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .subtitle {
+      margin: 0 0 .75rem 0;
+      font-size: 1.05rem;
+      color: #555;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      border-left: 4px solid #0066cc;
+      padding-left: 0.5rem;
+      font-weight: 600;
+    }
+
+    /* person card */
+    .member {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .avatar {
+      width: 140px; height: 140px;
+      border: 1px solid #ccc; border-radius: 4px;
+      overflow: hidden; background: #f5f5f5; flex: 0 0 auto;
+    }
+    .avatar img {
+      width: 100%; height: 100%; object-fit: cover;
+      display: block;
+    }
+    .member-info { flex: 1; min-width: 250px; }
+    .name-line { font-weight: 700; font-size: 1.05rem; margin-bottom: .25rem; }
+    .role-line { font-size: .95rem; color: #444; margin-bottom: .5rem; }
+    .contact-line, .research-line, .bio-line { font-size: .9rem; margin-bottom: .4rem; }
+
+    .links a { margin-right: .75rem; white-space: nowrap; }
+    .links a::after { content: "↗"; font-size: .85em; margin-left: .2rem; color: #777; }
+
+    /* alumni list */
+    .alumni-list li { margin-bottom: .5rem; }
+
+    footer {
+      border-top: 2px solid #ddd;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>M2D2 Lab</h1>
+    <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+    <div>Department of Mechanical Engineering, Wayne State University</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="openings.html">Openings</a>
+    </nav>
+  </header>
+
+  <!-- PI -->
+  <h2>Principal Investigator</h2>
+  <div class="member">
+    <div class="avatar">
+      <!-- Upload your photo to images/feng.jpg (or rename) -->
+      <img src="images/feng.jpg" alt="Dr. Longsheng Feng">
+    </div>
+    <div class="member-info">
+      <div class="name-line">Dr. Longsheng Feng</div>
+      <div class="role-line">Assistant Professor, Mechanical Engineering · Wayne State University</div>
+
+      <div class="contact-line">
+        Email: <a href="mailto:longsheng.feng@wayne.edu"><strong>longsheng.feng@wayne.edu</strong></a>
+      </div>
+
+      <div class="research-line">
+        <strong>Research interests:</strong> microstructure evolution in extreme environments; mesoscale/phase-field modeling;
+        stacking faults &amp; defect-mediated deformation; microstructure-aware design of energy/structural materials; data-driven PMP.
+      </div>
+
+      <div class="bio-line">
+        Dr. Feng’s group develops physics-based and data-driven tools to connect processing, emergent microstructure,
+        and properties in demanding environments, spanning high-temperature alloys and architected energy materials.
+      </div>
+
+      <div class="links" style="margin-top:.5rem;">
+        <!-- Replace the # with your real URLs -->
+        <a href="https://engineering.wayne.edu/profile/ic3645" target="_blank" rel="noopener">Department page</a>
+        <a href="https://www.linkedin.com/in/longsheng-feng-a5835779" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=r3WX0rEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+        <!-- Upload your CV to /files/Feng_CV.pdf (create the 'files' folder), then link below -->
+        <a href="files/Feng_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PhD Students -->
+  <h2>Ph.D. Students</h2>
+
+  <div class="member">
+    <div class="avatar">
+      <img src="images/student_placeholder.png" alt="[Student Name]">
+    </div>
+    <div class="member-info">
+      <div class="name-line">[Student Name]</div>
+      <div class="role-line">Ph.D. Student, Mechanical Engineering</div>
+      <div class="contact-line">Email: <a href="mailto:student@wayne.edu"><strong>student@wayne.edu</strong></a></div>
+      <div class="research-line"><strong>Interests:</strong> mesoscale modeling of microstructure evolution; phase transformation under thermo-mechanical loads.</div>
+      <div class="bio-line">Develops simulation tools to predict defect kinetics and microstructure-property linkages for reliability in structural alloys.</div>
+    </div>
+  </div>
+
+  <div class="member">
+    <div class="avatar">
+      <img src="images/student_placeholder.png" alt="[Student Name]">
+    </div>
+    <div class="member-info">
+      <div class="name-line">[Student Name]</div>
+      <div class="role-line">Ph.D. Student, Mechanical Engineering</div>
+      <div class="contact-line">Email: <a href="mailto:student@wayne.edu"><strong>student@wayne.edu</strong></a></div>
+      <div class="research-line"><strong>Interests:</strong> architected energy materials; transport in 3D interpenetrating structures; solid-state batteries.</div>
+      <div class="bio-line">Focuses on spinodal-inspired bicontinuous networks to co-optimize mechanics and transport in electrochemical systems.</div>
+    </div>
+  </div>
+
+  <!-- MS Students -->
+  <h2>M.S. Students</h2>
+
+  <div class="member">
+    <div class="avatar">
+      <img src="images/student_placeholder.png" alt="[Student Name]">
+    </div>
+    <div class="member-info">
+      <div class="name-line">[Student Name]</div>
+      <div class="role-line">M.S. Student, Mechanical Engineering</div>
+      <div class="contact-line">Email: <a href="mailto:student@wayne.edu"><strong>student@wayne.edu</strong></a></div>
+      <div class="research-line"><strong>Interests:</strong> data-driven PMP mapping; physics-informed ML for materials design.</div>
+      <div class="bio-line">Builds models linking processing routes to emergent features and performance with uncertainty awareness.</div>
+    </div>
+  </div>
+
+  <!-- Undergraduate Researchers -->
+  <h2>Undergraduate Researchers</h2>
+
+  <div class="member">
+    <div class="avatar">
+      <img src="images/student_placeholder.png" alt="[Student Name]">
+    </div>
+    <div class="member-info">
+      <div class="name-line">[Student Name]</div>
+      <div class="role-line">Undergraduate Researcher</div>
+      <div class="contact-line">Email: <a href="mailto:student@wayne.edu"><strong>student@wayne.edu</strong></a></div>
+      <div class="research-line"><strong>Interests:</strong> microstructure image analysis; dataset curation for ML; visualization of 3D morphologies.</div>
+      <div class="bio-line">Supports image-based quantification and data pipelines for supervised/physics-informed learning.</div>
+    </div>
+  </div>
+
+  <!-- Alumni -->
+  <h2>Alumni</h2>
+  <ul class="alumni-list">
+    <li>[Name], Ph.D. student (YYYY–YYYY)</li>
+    <li>[Name], M.S. student (YYYY–YYYY)</li>
+    <li>[Name], Undergraduate researcher (YYYY)</li>
+  </ul>
+
+  <footer>
+    © 2025 M2D2 Lab · Wayne State University
+  </footer>
+</body>
+</html>
