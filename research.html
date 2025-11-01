@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research | M2D2 Lab</title>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 2rem auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      color: #222;
+    }
+    header {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .subtitle {
+      margin: 0 0 .75rem 0;
+      font-size: 1.05rem;
+      color: #555;
+    }
+
+    /* Section titles */
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .section-sub {
+      text-align: center;
+      color: #555;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Overview content */
+    .overview {
+      margin: 0 auto 2rem auto;
+      max-width: 860px;
+    }
+    .overview ul { margin-top: .75rem; }
+    .overview li { margin-bottom: .4rem; }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    @media (min-width: 820px) {
+      .projects { grid-template-columns: 1fr 1fr; }
+    }
+
+    .project {
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      background: #fafafa;
+    }
+    .project h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .project figure {
+      margin: 0;
+      text-align: center;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: block;
+      margin: 0.25rem auto 0.5rem auto;
+    }
+    .project figcaption {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .papers {
+      margin-top: .25rem;
+      padding-left: 1.1rem;
+    }
+    .papers li {
+      margin-bottom: .35rem;
+    }
+
+    footer {
+      border-top: 2px solid #ddd;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>M2D2 Lab</h1>
+    <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+    <div>Department of Mechanical Engineering, Wayne State University</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="openings.html">Openings</a>
+    </nav>
+  </header>
+
+  <!-- Research Overview -->
+  <div class="section-title">Research Overview</div>
+  <div class="overview">
+    <p>
+      The M2D2 Lab focuses on microstructure modeling and the exploration of 
+      processing–microstructure–property (PMP) relationships. 
+      We integrate physics-based computational models with data-driven approaches
+      to understand how microstructures form and evolve 
+      under realistic service conditions. Leveraging validated computational 
+      datasets, we accelerate the development and deployment 
+      of materials for energy and extreme environments by uncovering the hidden 
+      roles of microstructure and transforming the PMP relationship into actionable design insight.
+    </p>
+    <ul>
+      <li>Mesoscale evolution: defect-mediated transformation, coarsening, and damage localization</li>
+      <li>Architected materials: spinodal-inspired bicontinuous networks for energy/structural applications</li>
+      <li>Processing–Microstructure–Property (PMP) mapping via physics-informed ML</li>
+      <li>Design under constraints: co-optimizing transport, mechanics, and manufacturability</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Projects</div>
+  <div class="section-sub">Representative examples (duplicate a card below to add more projects)</div>
+
+  <section class="projects">
+    <!-- ===== Project card: copy/paste this block to add more projects ===== -->
+    <article class="project">
+      <h3>Spinodal-Inspired 3D Interpenetrating Electrodes</h3>
+
+      <figure>
+        <!-- Upload an image to /images/ and update the filename below -->
+        <img src="images/spinodal_electrode.png" alt="Bicontinuous, spinodal-inspired electrode microstructure">
+        <figcaption>Balanced pathways for ion/electron transport with robust mechanics.</figcaption>
+      </figure>
+
+      <p>
+        We explore bicontinuous, interpenetrating microstructures to co-optimize
+        mechanics and transport in solid-state battery architectures. Using
+        mesoscale simulations and data-driven analysis, we identify geometry–property
+        relationships that guide manufacturable designs beyond layered electrodes.
+      </p>
+
+      <div><strong>Selected papers:</strong></div>
+      <ul class="papers">
+        <!-- Replace # with real links (DOI, journal page, arXiv) -->
+        <li><a href="#" target="_blank" rel="noopener">Random 3D interpenetrating electrode design for energy storage (2025)</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Machine-learning-assisted microstructure effects on ionic transport (2024)</a></li>
+      </ul>
+    </article>
+    <!-- ===== end project card ===== -->
+  </section>
+
+  <footer>
+    © 2025 M2D2 Lab · Wayne State University
+  </footer>
+</body>
+</html>
