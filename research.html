@@ -126,7 +126,39 @@
       margin-top: .45rem;
       text-align: center;
     }
+.media-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin: 0.5rem 0 1rem 0;
+}
 
+.media-row figure {
+  margin: 0;
+}
+
+.media-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.media-row figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* Stack images vertically on small screens */
+@media (max-width: 700px) {
+  .media-row {
+    grid-template-columns: 1fr;
+  }
+}
     .theme-text {
       margin-top: .75rem;
     }
@@ -243,16 +275,10 @@
 
       <div class="theme-text">
         <p>
-          Microstructures contain rich information that governs transport, mechanics, and degradation,
-          but extracting physically meaningful design rules from high-dimensional data remains challenging.
-          We develop microstructure informatics methods that integrate simulation-generated datasets,
+          We develop microstructure informatics framework that integrate simulation-generated datasets,
           image-based learning, physically motivated descriptors, interpretable machine learning,
-          causal analysis, and regime discovery to connect morphology with effective properties.
+          causal analysis, and regime discovery to connect morphology with microstructure-aware properties.
         </p>
-        <div class="keywords">
-          <strong>Keywords:</strong> microstructure&ndash;property relationships; interpretable AI; causal analysis;
-          representation learning; porous microstructures; solid-state battery composites.
-        </div>
       </div>
 
       <div class="papers-block">
@@ -270,28 +296,17 @@
       <h2>Chemo-Mechanical Coupling and Degradation in Energy Materials</h2>
 
       <figure>
-        <!-- Replace this placeholder with your image, e.g.:
-        <img src="images/research_energy_degradation.png" alt="Chemo-mechanical coupling and degradation in energy materials" />
-        -->
-        <div class="image-placeholder">
-          <strong>Image placeholder</strong>
-          <span>Suggested: battery particle, crack/phase transformation map, stress field, or ion-transport map</span>
-        </div>
-        <figcaption>Coupled diffusion, reaction, stress, phase transformation, and damage.</figcaption>
+        <!-- Replace this placeholder with your image, e.g.: -->
+        <img src="images/Crack-PT-Comp.png" alt="Chemo-mechanical coupling and degradation in energy materials" />
+        <figcaption>Phase field modeling of cubic-to-tetragonal phase transformation in LLZO with static crack (yellow stick) under hydrostatic compression.</figcaption>
       </figure>
 
       <div class="theme-text">
         <p>
-          Energy materials operate under coupled chemical, electrochemical, and mechanical driving forces.
-          We develop computational models to understand how ion transport, interfacial reactions,
+          We develop mesoscale computational models to understand how ion transport, interfacial reactions,
           phase transformations, stress evolution, cracking, and microstructural heterogeneity interact
-          during battery operation. This work emphasizes solid-state batteries, cathode and solid-electrolyte
-          materials, grain-boundary transport, and degradation mechanisms emerging from coupled fields.
+          during battery manufacturing and operation. 
         </p>
-        <div class="keywords">
-          <strong>Keywords:</strong> solid-state batteries; ion transport; chemo-mechanics; phase transformation;
-          cracking; grain boundaries; degradation modeling.
-        </div>
       </div>
 
       <div class="papers-block">
@@ -299,7 +314,7 @@
         <ul class="papers">
           <li><a href="https://doi.org/10.1016/j.scriptamat.2026.117438" target="_blank" rel="noopener">Computational simulation of asymmetric phase transformation in cracked Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>: Variant selection and chemo-mechanical implications</a></li>
           <li><a href="https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.5c00360" target="_blank" rel="noopener">Modeling single-crystal battery materials: From fundamental understanding to performance evaluation</a></li>
-          <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials</a></li>
+          <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>&ndash;LiCoO<sub>2</sub></a></li>
         </ul>
       </div>
     </section>
@@ -321,17 +336,10 @@
 
       <div class="theme-text">
         <p>
-          Defects are not only damage sources; they can also provide local pathways for phase transformation,
-          solute redistribution, and mechanical response. We study how dislocations, stacking faults,
+          We study how dislocations, stacking faults,
           grain boundaries, precipitates, and applied stresses mediate phase transformations and deformation
-          mechanisms in structural alloys. By combining phase-field modeling, thermodynamic analysis,
-          and mechanistic simulations, we aim to identify defect-level design principles for improved strength,
-          creep resistance, transformation stability, and functional performance.
+          mechanisms in structural alloys. 
         </p>
-        <div class="keywords">
-          <strong>Keywords:</strong> superalloys; dislocations; stacking faults; precipitates; phase-field modeling;
-          localized phase transformation; alloy design.
-        </div>
       </div>
 
       <div class="papers-block">
@@ -340,7 +348,7 @@
           <li><a href="https://doi.org/10.1016/j.actamat.2022.118287" target="_blank" rel="noopener">Localized phase transformation at stacking faults and mechanism-based alloy design</a></li>
           <li><a href="https://doi.org/10.1038/s41524-021-00660-z" target="_blank" rel="noopener">Generalized stacking fault energy surface mismatch and dislocation transformation</a></li>
           <li><a href="https://doi.org/10.1016/j.actamat.2023.118693" target="_blank" rel="noopener">Phase field modeling of shearing processes of a dual-lobed &gamma;&Prime;|&gamma;&prime;|&gamma;&Prime; coprecipitate</a></li>
-          <li><a href="https://doi.org/10.1038/s43246-025-00895-z" target="_blank" rel="noopener">Stress-dependent &chi; phase transformation in a Ni-based superalloy</a></li>
+          <li><a href="https://doi.org/10.1016/j.actamat.2020.08.056" target="_blank" rel="noopener">Quantitative prediction of Suzuki segregation at stacking faults of the &gamma;&Prime; phase in Ni-base superalloys</a></li>
         </ul>
       </div>
     </section>
@@ -362,16 +370,11 @@
 
       <div class="theme-text">
         <p>
-          Architected porous and interpenetrating microstructures provide powerful routes to control transport,
-          reaction, and mechanical response. We investigate how connectivity, tortuosity, phase distribution,
-          and 3D architecture regulate ion diffusion, fluid transport, gas evolution, and structural integrity
-          in energy materials. This research spans interpenetrating electrodes, nanoporous separators,
-          polymer-derived porous materials, hydrogen-storage structures, and multifunctional architected materials.
+          Architected porous and interpenetrating microstructures/structures provide powerful routes to control transport,
+          reaction, and mechanical response. We investigate how microstructure and structure design can 
+          regulate ion diffusion, fluid transport, mechanical integrity
+          in structure and functional materials. 
         </p>
-        <div class="keywords">
-          <strong>Keywords:</strong> architected materials; porous media; interpenetrating electrodes; transport;
-          water splitting; hydrogen storage; polymerization-induced phase separation.
-        </div>
       </div>
 
       <div class="papers-block">
