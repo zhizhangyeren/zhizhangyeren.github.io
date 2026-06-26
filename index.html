@@ -6,103 +6,294 @@
   <title>M2D2 Lab | Wayne State University</title>
 
   <style>
+    :root {
+      --text: #1f2933;
+      --muted: #52616b;
+      --blue: #0066cc;
+      --blue-dark: #004a99;
+      --orange: #d95f02;
+      --purple: #7570b3;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --border: #e3e8ef;
+      --shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+      --shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      max-width: 900px;
-      margin: 2rem auto;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 2.5rem 1rem;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      color: #222;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(0, 102, 204, 0.10), transparent 34rem),
+        radial-gradient(circle at top right, rgba(217, 95, 2, 0.10), transparent 28rem),
+        var(--bg);
     }
-    header {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin-right: 1rem;
+
+    a {
+      color: var(--blue);
       text-decoration: none;
-      color: #0066cc;
-      font-weight: 500;
     }
-    h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.8rem;
-      font-weight: 600;
+
+    a:hover {
+      text-decoration: underline;
     }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1rem 0 1.25rem 0;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
     .subtitle {
-      margin: 0 0 0.75rem 0;
-      font-size: 1.05rem;
-      color: #d95f02;
-      font-weight: 600;
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--orange);
+      font-weight: 700;
     }
-    .subtitle1 {
-      margin: 0 0 0.75rem 0;
-      font-size: 1.05rem;
-      color: #7570b3;
-      font-weight: 600;
+
+    .affiliation {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.95rem;
     }
-    h2 {
-      margin-top: 2rem;
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.4rem 0.75rem;
+    }
+
+    nav a {
+      padding: 0.45rem 0.65rem;
+      border-radius: 999px;
+      color: var(--blue-dark);
+      font-weight: 650;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      background: rgba(0, 102, 204, 0.08);
+      text-decoration: none;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,255,255,0.88));
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-kicker {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(217, 95, 2, 0.10);
+      color: #9a3f00;
+      font-size: 0.88rem;
+      font-weight: 750;
+    }
+
+    .hero h2 {
+      max-width: 960px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.35rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      font-weight: 850;
+    }
+
+    .hero h2 span {
+      color: var(--blue-dark);
+    }
+
+    .hero-text {
+      max-width: 900px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-media-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+
+    .hero-panel {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel-media {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      background:
+        linear-gradient(135deg, rgba(0, 102, 204, 0.12), rgba(117, 112, 179, 0.12)),
+        #eef3f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      color: var(--muted);
+      font-weight: 750;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-panel-media img,
+    .hero-panel-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-media-subtitle {
+      margin: 0.85rem 0 0 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+      text-align: center;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.35rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 1.25rem;
+    }
+
+    h2.section-heading {
+      margin: 0 0 1rem 0;
       font-size: 1.3rem;
-      border-left: 4px solid #0066cc;
-      padding-left: 0.5rem;
-      font-weight: 600;
+      border-left: 4px solid var(--blue);
+      padding-left: 0.65rem;
+      font-weight: 800;
     }
+
     .news-list {
       list-style: none;
       padding: 0;
-      margin: 1rem 0 0 0;
-      border-top: 1px solid #e5e5e5;
+      margin: 0;
+      border-top: 1px solid var(--border);
     }
+
     .news-item {
-      padding: 0.85rem 0;
-      border-bottom: 1px solid #e5e5e5;
+      display: grid;
+      grid-template-columns: 8.5rem 1fr;
+      gap: 1rem;
+      padding: 0.95rem 0;
+      border-bottom: 1px solid var(--border);
     }
+
     .news-date {
-      display: inline-block;
-      min-width: 7.5rem;
-      color: #7570b3;
-      font-weight: 700;
-    }
-    .news-title {
-      font-weight: 700;
-    }
-    .news-item p {
-      margin: 0.25rem 0 0 7.75rem;
-      color: #444;
+      color: var(--purple);
+      font-weight: 800;
       font-size: 0.95rem;
     }
-    @media (max-width: 650px) {
-      .news-date {
-        display: block;
-        min-width: 0;
-        margin-bottom: 0.2rem;
-      }
-      .news-item p {
-        margin-left: 0;
-      }
+
+    .news-title {
+      font-weight: 800;
     }
+
+    .news-item p {
+      margin: 0.25rem 0 0 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
     .people-card {
-      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      align-items: baseline;
+      color: var(--muted);
     }
+
+    .people-card strong {
+      color: var(--text);
+    }
+
     footer {
-      border-top: 2px solid #ddd;
-      margin-top: 3rem;
-      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+      padding: 1.25rem 0 0 0;
       font-size: 0.9rem;
-      color: #666;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        justify-content: flex-start;
+        margin-top: 1rem;
+      }
+
+      .hero {
+        padding: 1.35rem;
+      }
+
+      .hero-media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero-media-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>M2D2 Lab</h1>
-    <div class="subtitle">Microstructure Modeling and Data-Driven Design Lab</div>
-    <div class="subtitle1">Where AI meets Microstructure: Accelerating Materials Development for Energy and Extreme Environments</div>
-    <div>Department of Mechanical Engineering, Wayne State University</div>
+    <div class="brand">
+      <h1>M2D2 Lab</h1>
+      <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+      <div class="affiliation">Department of Mechanical Engineering, Wayne State University</div>
+    </div>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="people.html">People</a>
@@ -111,55 +302,130 @@
     </nav>
   </header>
 
-  <figure style="margin:1rem 0;">
-    <img src="images/home_1.png" alt="Simulated Bi-continuous Microstructure" style="display:block; margin:1rem auto; max-width:100%; width:800px; height:auto;">
-  </figure>
+  <main>
+    <section class="hero">
+      <div class="hero-kicker">Where AI meets microstructure</div>
+      <h2>Accelerating materials development for <span>energy</span> and <span>extreme environments</span>.</h2>
+      <p class="hero-text">
+        The M2D2 Lab combines physics-based microstructure simulations with machine learning and data-driven tools
+        to reveal how microstructures form, evolve, and control material performance across energy materials,
+        structural alloys, and architected systems.
+      </p>
 
-  
-  <section>
-    <p>
-      The M2D2 Lab drives materials design for energy materials and structural alloys by 
-      combining multi-physics <strong>microstructure</strong> simulations with <strong>machine learning and data-driven</strong> tools 
-      to unravel the complex <strong>processing–microstructure–property</strong> relationships 
-    </p>
-  </section>
+      <div class="hero-media-grid" aria-label="Physics-based simulation highlights">
+        <div class="hero-panel">
+          <div class="hero-panel-media">
+            <!--
+            Replace this placeholder with a GIF:
+            <img src="images/home_animation_1.gif" alt="Physics-based simulation animation 1">
 
-  <h2>News</h2>
-  <ul class="news-list">
-    <li class="news-item">
-      <span class="news-date">Apr 2026</span>
-      <span class="news-title">University Research Grant(URG) awarded.</span>
-      <p>Dr. Longsheng Feng was awarded with 2026-27 University Research Grant. 
-        The project will focus on chemo-mechanical coupling of diffusion, phase transformation and cracking in cathode materials. 
-        The funding period is from Aug 1st, 2026 to Sep 1st, 2028.</p>
-    </li>
-    <li class="news-item">
-      <span class="news-date">Oct 2025</span>
-      <span class="news-title">M2D2 Lab website launched.</span>
-      <p>The lab website is now live at <a href="https://m2d2-fenglab.com" target="_blank" rel="noopener">m2d2-fenglab.com</a>.</p>
-    </li>
-    <li class="news-item">
-      <span class="news-date">Oct 2025</span>
-      <span class="news-title">M2D2 Lab established at Wayne State University.</span>
-      <p>We are building a computational materials research group focused on microstructure modeling and data-driven materials design.</p>
-    </li>
-    <!--
-    To add a new item, copy one <li class="news-item"> block above and edit the date, title, and description.
-    Example:
-    <li class="news-item">
-      <span class="news-date">Month Year</span>
-      <span class="news-title">News headline.</span>
-      <p>Short description of the update.</p>
-    </li>
-    -->
-  </ul>
+            Or use MP4:
+            <video autoplay muted loop playsinline>
+              <source src="images/home_animation_1.mp4" type="video/mp4">
+            </video>
+            -->
+            Simulation 1
+          </div>
+        </div>
 
-  <h2>PI</h2>
-  <div class="people-card">
-    <strong>Dr. Longsheng Feng</strong><br/>
-    Assistant Professor, Wayne State University<br/>
-    longsheng.feng@wayne.edu
-  </div>
+        <div class="hero-panel">
+          <div class="hero-panel-media">
+            <!--
+            Replace this placeholder with a GIF:
+            <img src="images/home_animation_2.gif" alt="Physics-based simulation animation 2">
+
+            Or use MP4:
+            <video autoplay muted loop playsinline>
+              <source src="images/home_animation_2.mp4" type="video/mp4">
+            </video>
+            -->
+            Simulation 2
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-media">
+            <!--
+            Replace this placeholder with a GIF:
+            <img src="images/home_animation_3.gif" alt="Physics-based simulation animation 3">
+
+            Or use MP4:
+            <video autoplay muted loop playsinline>
+              <source src="images/home_animation_3.mp4" type="video/mp4">
+            </video>
+            -->
+            Simulation 3
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-media">
+            <!--
+            Replace this placeholder with a GIF:
+            <img src="images/home_animation_4.gif" alt="Physics-based simulation animation 4">
+
+            Or use MP4:
+            <video autoplay muted loop playsinline>
+              <source src="images/home_animation_4.mp4" type="video/mp4">
+            </video>
+            -->
+            Simulation 4
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-media-subtitle">
+        Physics-based simulations of microstructure evolution, transport, deformation, and phase transformation.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-heading">News</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <div class="news-date">June 2026</div>
+          <div>
+            <div class="news-title">M2D2 Lab website launched.</div>
+            <p>The lab website is now live at <a href="https://m2d2-fenglab.com" target="_blank" rel="noopener">m2d2-fenglab.com</a>.</p>
+          </div>
+        </li>
+        <li class="news-item">
+          <div class="news-date">2026</div>
+          <div>
+            <div class="news-title">Recent publications updated.</div>
+            <p>See our <a href="publications.html">Publications</a> page for recent work in microstructure informatics, energy materials, and alloy design.</p>
+          </div>
+        </li>
+        <li class="news-item">
+          <div class="news-date">2025</div>
+          <div>
+            <div class="news-title">M2D2 Lab established at Wayne State University.</div>
+            <p>We are building a computational materials research group focused on microstructure modeling and data-driven materials design.</p>
+          </div>
+        </li>
+        <!--
+        To add a new item, copy one <li class="news-item"> block above and edit the date, title, and description.
+        Example:
+        <li class="news-item">
+          <div class="news-date">Month Year</div>
+          <div>
+            <div class="news-title">News headline.</div>
+            <p>Short description of the update.</p>
+          </div>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="section-heading">Principal Investigator</h2>
+      <div class="people-card">
+        <strong>Dr. Longsheng Feng</strong>
+        <span>Assistant Professor, Wayne State University</span>
+        <a href="mailto:longsheng.feng@wayne.edu">longsheng.feng@wayne.edu</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     © 2026 M2D2 Lab · Wayne State University
