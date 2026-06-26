@@ -48,6 +48,40 @@
       padding-left: 0.5rem;
       font-weight: 600;
     }
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      border-top: 1px solid #e5e5e5;
+    }
+    .news-item {
+      padding: 0.85rem 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .news-date {
+      display: inline-block;
+      min-width: 7.5rem;
+      color: #7570b3;
+      font-weight: 700;
+    }
+    .news-title {
+      font-weight: 700;
+    }
+    .news-item p {
+      margin: 0.25rem 0 0 7.75rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 650px) {
+      .news-date {
+        display: block;
+        min-width: 0;
+        margin-bottom: 0.2rem;
+      }
+      .news-item p {
+        margin-left: 0;
+      }
+    }
     .people-card {
       margin-bottom: 1rem;
     }
@@ -89,6 +123,34 @@
       to unravel the complex <strong>processing–microstructure–property</strong> relationships 
     </p>
   </section>
+
+  <h2>News</h2>
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">June 2026</span>
+      <span class="news-title">M2D2 Lab website launched.</span>
+      <p>The lab website is now live at <a href="https://m2d2-fenglab.com" target="_blank" rel="noopener">m2d2-fenglab.com</a>.</p>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026</span>
+      <span class="news-title">Recent publications updated.</span>
+      <p>See our <a href="publications.html">Publications</a> page for recent work in microstructure informatics, energy materials, and alloy design.</p>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2025</span>
+      <span class="news-title">M2D2 Lab established at Wayne State University.</span>
+      <p>We are building a computational materials research group focused on microstructure modeling and data-driven materials design.</p>
+    </li>
+    <!--
+    To add a new item, copy one <li class="news-item"> block above and edit the date, title, and description.
+    Example:
+    <li class="news-item">
+      <span class="news-date">Month Year</span>
+      <span class="news-title">News headline.</span>
+      <p>Short description of the update.</p>
+    </li>
+    -->
+  </ul>
 
   <h2>PI</h2>
   <div class="people-card">
