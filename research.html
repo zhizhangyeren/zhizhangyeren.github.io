@@ -4,388 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research | M2D2 Lab</title>
-
-  <style>
-    body {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      color: #222;
-    }
-    header {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.9rem;
-      font-weight: 700;
-      letter-spacing: .2px;
-    }
-    .subtitle {
-      margin: 0 0 .75rem 0;
-      font-size: 1.05rem;
-      color: #d95f02;
-      font-weight: 600;
-    }
-
-    /* Section titles */
-    .section-title {
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
-    .section-sub {
-      text-align: center;
-      color: #555;
-      margin: 0 auto 1.75rem auto;
-      max-width: 760px;
-    }
-
-    /* Overview content */
-    .overview {
-      margin: 0 auto 2rem auto;
-      max-width: 860px;
-    }
-    .overview p { margin-bottom: 1rem; }
-
-    /* Research themes */
-    .themes {
-      display: block;
-      margin-top: 1.5rem;
-    }
-    .theme {
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
-      padding: 1.15rem;
-      margin-bottom: 1.6rem;
-      background: #fafafa;
-    }
-    .theme h2 {
-      margin: 0 0 .85rem 0;
-      font-size: 1.22rem;
-      font-weight: 700;
-      color: #222;
-    }
-
-    /* Wide image area for each theme */
-    .theme figure {
-      margin: 0 0 1rem 0;
-      width: 100%;
-    }
-    .theme img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #f3f3f3;
-    }
-    .image-placeholder {
-      width: 100%;
-      min-height: 260px;
-      box-sizing: border-box;
-      border: 2px dashed #bbb;
-      border-radius: 8px;
-      background: #f3f3f3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #666;
-      padding: 1.25rem;
-    }
-    .image-placeholder strong {
-      display: block;
-      color: #444;
-      font-size: 1rem;
-      margin-bottom: .35rem;
-    }
-    .image-placeholder span {
-      font-size: .9rem;
-      max-width: 620px;
-    }
-    figcaption {
-      font-size: 0.86rem;
-      color: #555;
-      margin-top: .45rem;
-      text-align: center;
-    }
-.media-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  align-items: start;
-  margin: 0.5rem 0 1rem 0;
-}
-
-.media-row figure {
-  margin: 0;
-}
-
-.media-row img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-.media-row figcaption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.4rem;
-  text-align: center;
-}
-
-/* Stack images vertically on small screens */
-@media (max-width: 700px) {
-  .media-row {
-    grid-template-columns: 1fr;
-  }
-}
-    .theme-text {
-      margin-top: .75rem;
-    }
-    .theme-text p {
-      margin-top: 0;
-      margin-bottom: .8rem;
-    }
-    .keywords {
-      margin: .5rem 0 .9rem 0;
-      font-size: .92rem;
-      color: #444;
-    }
-    .papers-block {
-      margin-top: .9rem;
-      padding-top: .75rem;
-      border-top: 1px solid #e0e0e0;
-    }
-    .papers-title {
-      font-weight: 700;
-      margin-top: 0;
-      margin-bottom: .4rem;
-    }
-    .papers {
-      margin-top: .25rem;
-      margin-bottom: 0;
-      padding-left: 1.1rem;
-      font-size: .94rem;
-    }
-    .papers li {
-      margin-bottom: .38rem;
-    }
-    .papers a {
-      color: #0b63c7;
-      text-decoration: none;
-    }
-    .papers a:hover { text-decoration: underline; }
-
-    .note {
-      margin-top: 2rem;
-      padding: 1rem;
-      border-left: 4px solid #0066cc;
-      background: #f7f9fc;
-      color: #333;
-    }
-
-    footer {
-      border-top: 2px solid #ddd;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 720px) {
-      body {
-        margin-top: 1.25rem;
-      }
-      nav a {
-        display: inline-block;
-        margin-bottom: .4rem;
-      }
-      .image-placeholder {
-        min-height: 190px;
-      }
-      .theme {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <h1>M2D2 Lab</h1>
-    <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
-    <div>Department of Mechanical Engineering, Wayne State University</div>
+    <div class="brand">
+      <h1>M2D2 Lab</h1>
+      <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+      <div class="affiliation">Department of Mechanical Engineering, Wayne State University</div>
+    </div>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
+      <a href="research.html" class="active">Research</a>
       <a href="people.html">People</a>
       <a href="publications.html">Publications</a>
       <a href="openings.html">Openings</a>
     </nav>
   </header>
 
-  <!-- Research Overview -->
-  <div class="section-title">Research Overview</div>
-  <div class="section-sub">
-    Understanding materials through microstructure, physics-based modeling, and data-driven design.
-  </div>
+  <main class="page-content">
+    <!-- Research Overview -->
+      <div class="section-title">Research Overview</div>
+      <div class="section-sub">
+        Understanding materials through microstructure, physics-based modeling, and data-driven design.
+      </div>
 
-  <div class="overview">
-    <p>
-      The M2D2 Lab studies how microstructures form, evolve, and control material properties.
-      We combine multiphysics modeling, mesoscale simulation, machine learning, and interpretable
-      data-driven analysis to reveal processing&ndash;microstructure&ndash;property relationships in
-      energy materials, structural alloys, and architected porous systems. Our goal is to convert
-      complex microstructural information into mechanistic understanding and actionable design
-      principles for materials operating in energy and extreme environments.
-    </p>
-  </div>
-
-  <div class="themes">
-
-    <!-- Theme 1 -->
-    <section class="theme">
-      <h2>Microstructure Informatics and AI-Guided Materials Design</h2>
-
-      <figure>
-        <img src="images/ML-Framework.png" alt="Microstructure informatics and AI-guided materials design" >
-        <figcaption>Integrated computational framework for exploring microstructure-property relationships.</figcaption>
-      </figure>
-
-      <div class="theme-text">
+      <div class="overview">
         <p>
-          We develop microstructure informatics framework that integrate simulation-generated datasets,
-          image-based learning, physically motivated descriptors, interpretable machine learning,
-          causal analysis, and regime discovery to connect morphology with microstructure-aware properties.
+          The M2D2 Lab studies how microstructures form, evolve, and control material properties.
+          We combine multiphysics modeling, mesoscale simulation, machine learning, and interpretable
+          data-driven analysis to reveal processing&ndash;microstructure&ndash;property relationships in
+          energy materials, structural alloys, and architected porous systems. Our goal is to convert
+          complex microstructural information into mechanistic understanding and actionable design
+          principles for materials operating in energy and extreme environments.
         </p>
       </div>
 
-      <div class="papers-block">
-        <div class="papers-title">Representative publications:</div>
-        <ul class="papers">
-          <li><a href="https://doi.org/10.1016/j.actamat.2026.122092" target="_blank" rel="noopener">Machine learning insights into microstructural origins of transport and mechanical properties in porous microstructures</a></li>
-          <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>&ndash;LiCoO<sub>2</sub></a></li>
-          <li><a href="https://pubs.acs.org/doi/full/10.1021/acsami.4c03011" target="_blank" rel="noopener">Integrated framework to model microstructure evolution and decipher the microstructure&ndash;property relationship in polymeric porous materials</a></li>
-        </ul>
-      </div>
-    </section>
+      <div class="themes">
 
-    <!-- Theme 2 -->
-    <section class="theme">
-      <h2>Chemo-Mechanical Coupling and Degradation in Energy Materials</h2>
+        <!-- Theme 1 -->
+        <section class="theme">
+          <h2>Microstructure Informatics and AI-Guided Materials Design</h2>
 
-      <figure>
-        <!-- Replace this placeholder with your image, e.g.: -->
-        <img src="images/Crack-PT-Comp.png" alt="Chemo-mechanical coupling and degradation in energy materials" />
-        <figcaption>Phase field modeling of cubic-to-tetragonal phase transformation in LLZO with static crack (yellow stick) under hydrostatic compression.</figcaption>
-      </figure>
+          <figure>
+            <img src="images/ML-Framework.png" alt="Microstructure informatics and AI-guided materials design" >
+            <figcaption>Integrated computational framework for exploring microstructure-property relationships.</figcaption>
+          </figure>
 
-      <div class="theme-text">
-        <p>
-          We develop mesoscale computational models to understand how ion transport, interfacial reactions,
-          phase transformations, stress evolution, cracking, and microstructural heterogeneity interact
-          during battery manufacturing and operation. 
-        </p>
-      </div>
+          <div class="theme-text">
+            <p>
+              We develop microstructure informatics framework that integrate simulation-generated datasets,
+              image-based learning, physically motivated descriptors, interpretable machine learning,
+              causal analysis, and regime discovery to connect morphology with microstructure-aware properties.
+            </p>
+          </div>
 
-      <div class="papers-block">
-        <div class="papers-title">Representative publications:</div>
-        <ul class="papers">
-          <li><a href="https://doi.org/10.1016/j.scriptamat.2026.117438" target="_blank" rel="noopener">Computational simulation of asymmetric phase transformation in cracked Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>: Variant selection and chemo-mechanical implications</a></li>
-          <li><a href="https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.5c00360" target="_blank" rel="noopener">Modeling single-crystal battery materials: From fundamental understanding to performance evaluation</a></li>
-          <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>&ndash;LiCoO<sub>2</sub></a></li>
-        </ul>
-      </div>
-    </section>
+          <div class="papers-block">
+            <div class="papers-title">Representative publications:</div>
+            <ul class="papers">
+              <li><a href="https://doi.org/10.1016/j.actamat.2026.122092" target="_blank" rel="noopener">Machine learning insights into microstructural origins of transport and mechanical properties in porous microstructures</a></li>
+              <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>&ndash;LiCoO<sub>2</sub></a></li>
+              <li><a href="https://pubs.acs.org/doi/full/10.1021/acsami.4c03011" target="_blank" rel="noopener">Integrated framework to model microstructure evolution and decipher the microstructure&ndash;property relationship in polymeric porous materials</a></li>
+            </ul>
+          </div>
+        </section>
 
-    <!-- Theme 3 -->
-    <section class="theme">
-      <h2>Defect-Mediated Phase Transformations and Alloy Design</h2>
+        <!-- Theme 2 -->
+        <section class="theme">
+          <h2>Chemo-Mechanical Coupling and Degradation in Energy Materials</h2>
 
-      <figure>
-        <!-- Replace this placeholder with your image, e.g.:-->
-        <img src="images/hamburger-shearing.png" alt="Defect-mediated phase transformations and alloy design" />
-        <figcaption>Stacking fault formation in a dual-lobed &gamma;&Prime;|&gamma;&prime;|&gamma;&Prime; coprecipitate.</figcaption>
-      </figure>
+          <figure>
+            <!-- Replace this placeholder with your image, e.g.: -->
+            <img src="images/Crack-PT-Comp.png" alt="Chemo-mechanical coupling and degradation in energy materials" />
+            <figcaption>Phase field modeling of cubic-to-tetragonal phase transformation in LLZO with static crack (yellow stick) under hydrostatic compression.</figcaption>
+          </figure>
 
-      <div class="theme-text">
-        <p>
-          We study how dislocations, stacking faults,
-          grain boundaries, precipitates, and applied stresses mediate phase transformations and deformation
-          mechanisms in structural alloys. 
-        </p>
-      </div>
+          <div class="theme-text">
+            <p>
+              We develop mesoscale computational models to understand how ion transport, interfacial reactions,
+              phase transformations, stress evolution, cracking, and microstructural heterogeneity interact
+              during battery manufacturing and operation. 
+            </p>
+          </div>
 
-      <div class="papers-block">
-        <div class="papers-title">Representative publications:</div>
-        <ul class="papers">
-          <li><a href="https://doi.org/10.1016/j.actamat.2022.118287" target="_blank" rel="noopener">Localized phase transformation at stacking faults and mechanism-based alloy design</a></li>
-          <li><a href="https://doi.org/10.1038/s41524-021-00660-z" target="_blank" rel="noopener">Generalized stacking fault energy surface mismatch and dislocation transformation</a></li>
-          <li><a href="https://doi.org/10.1016/j.actamat.2023.118693" target="_blank" rel="noopener">Phase field modeling of shearing processes of a dual-lobed &gamma;&Prime;|&gamma;&prime;|&gamma;&Prime; coprecipitate</a></li>
-          <li><a href="https://doi.org/10.1016/j.actamat.2020.08.056" target="_blank" rel="noopener">Quantitative prediction of Suzuki segregation at stacking faults of the &gamma;&Prime; phase in Ni-base superalloys</a></li>
-        </ul>
-      </div>
-    </section>
+          <div class="papers-block">
+            <div class="papers-title">Representative publications:</div>
+            <ul class="papers">
+              <li><a href="https://doi.org/10.1016/j.scriptamat.2026.117438" target="_blank" rel="noopener">Computational simulation of asymmetric phase transformation in cracked Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>: Variant selection and chemo-mechanical implications</a></li>
+              <li><a href="https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.5c00360" target="_blank" rel="noopener">Modeling single-crystal battery materials: From fundamental understanding to performance evaluation</a></li>
+              <li><a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub>&ndash;LiCoO<sub>2</sub></a></li>
+            </ul>
+          </div>
+        </section>
 
-    <!-- Theme 4 -->
-    <section class="theme">
-      <h2>Architected Porous and Interpenetrating Materials for Energy Applications</h2>
+        <!-- Theme 3 -->
+        <section class="theme">
+          <h2>Defect-Mediated Phase Transformations and Alloy Design</h2>
 
-      <figure>
-        <!-- Replace this placeholder with your image, e.g.:-->
-        <img src="images/3d-electrode.jpg" alt="Architected porous and interpenetrating materials for energy applications" />
+          <figure>
+            <!-- Replace this placeholder with your image, e.g.:-->
+            <img src="images/hamburger-shearing.png" alt="Defect-mediated phase transformations and alloy design" />
+            <figcaption>Stacking fault formation in a dual-lobed &gamma;&Prime;|&gamma;&prime;|&gamma;&Prime; coprecipitate.</figcaption>
+          </figure>
+
+          <div class="theme-text">
+            <p>
+              We study how dislocations, stacking faults,
+              grain boundaries, precipitates, and applied stresses mediate phase transformations and deformation
+              mechanisms in structural alloys. 
+            </p>
+          </div>
+
+          <div class="papers-block">
+            <div class="papers-title">Representative publications:</div>
+            <ul class="papers">
+              <li><a href="https://doi.org/10.1016/j.actamat.2022.118287" target="_blank" rel="noopener">Localized phase transformation at stacking faults and mechanism-based alloy design</a></li>
+              <li><a href="https://doi.org/10.1038/s41524-021-00660-z" target="_blank" rel="noopener">Generalized stacking fault energy surface mismatch and dislocation transformation</a></li>
+              <li><a href="https://doi.org/10.1016/j.actamat.2023.118693" target="_blank" rel="noopener">Phase field modeling of shearing processes of a dual-lobed &gamma;&Prime;|&gamma;&prime;|&gamma;&Prime; coprecipitate</a></li>
+              <li><a href="https://doi.org/10.1016/j.actamat.2020.08.056" target="_blank" rel="noopener">Quantitative prediction of Suzuki segregation at stacking faults of the &gamma;&Prime; phase in Ni-base superalloys</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Theme 4 -->
+        <section class="theme">
+          <h2>Architected Porous and Interpenetrating Materials for Energy Applications</h2>
+
+          <figure>
+            <!-- Replace this placeholder with your image, e.g.:-->
+            <img src="images/3d-electrode.jpg" alt="Architected porous and interpenetrating materials for energy applications" />
         
-        <figcaption>3D interpenetrating electrode design, fabrication and verification.</figcaption>
-      </figure>
+            <figcaption>3D interpenetrating electrode design, fabrication and verification.</figcaption>
+          </figure>
 
-      <div class="theme-text">
-        <p>
-          Architected porous and interpenetrating microstructures/structures provide powerful routes to control transport,
-          reaction, and mechanical response. We investigate how microstructure and structure design can 
-          regulate ion diffusion, fluid transport, mechanical integrity
-          in structure and functional materials. 
-        </p>
+          <div class="theme-text">
+            <p>
+              Architected porous and interpenetrating microstructures/structures provide powerful routes to control transport,
+              reaction, and mechanical response. We investigate how microstructure and structure design can 
+              regulate ion diffusion, fluid transport, mechanical integrity
+              in structure and functional materials. 
+            </p>
+          </div>
+
+          <div class="papers-block">
+            <div class="papers-title">Representative publications:</div>
+            <ul class="papers">
+              <li><a href="https://doi.org/10.1002/sstr.202500766" target="_blank" rel="noopener">Random 3D interpenetrating electrode design for energy storage applications</a></li>
+              <li><a href="https://doi.org/10.1007/s40820-024-01472-8" target="_blank" rel="noopener">Interpenetrated structures for enhancing ion diffusion kinetics in electrochemical energy storage devices</a></li>
+              <li><a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">Interpenetrating 3D electrodes for high-rate alkaline water splitting</a></li>
+              <li><a href="https://doi.org/10.1002/aenm.202302073" target="_blank" rel="noopener">Nanocone-modified surface facilitates gas bubble detachment for high-rate alkaline water splitting</a></li>
+              <li><a href="https://doi.org/10.1002/adfm.202515701" target="_blank" rel="noopener">Tailored additive design of scaffold-free porous Mg for ultimate hydrogen storage</a></li>
+            </ul>
+          </div>
+        </section>
+
       </div>
 
-      <div class="papers-block">
-        <div class="papers-title">Representative publications:</div>
-        <ul class="papers">
-          <li><a href="https://doi.org/10.1002/sstr.202500766" target="_blank" rel="noopener">Random 3D interpenetrating electrode design for energy storage applications</a></li>
-          <li><a href="https://doi.org/10.1007/s40820-024-01472-8" target="_blank" rel="noopener">Interpenetrated structures for enhancing ion diffusion kinetics in electrochemical energy storage devices</a></li>
-          <li><a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">Interpenetrating 3D electrodes for high-rate alkaline water splitting</a></li>
-          <li><a href="https://doi.org/10.1002/aenm.202302073" target="_blank" rel="noopener">Nanocone-modified surface facilitates gas bubble detachment for high-rate alkaline water splitting</a></li>
-          <li><a href="https://doi.org/10.1002/adfm.202515701" target="_blank" rel="noopener">Tailored additive design of scaffold-free porous Mg for ultimate hydrogen storage</a></li>
-        </ul>
+      <div class="note">
+        <strong>Full publication list:</strong>
+        See the <a href="publications.html">Publications</a> page for a complete and updated list of lab-related work.
       </div>
-    </section>
-
-  </div>
-
-  <div class="note">
-    <strong>Full publication list:</strong>
-    See the <a href="publications.html">Publications</a> page for a complete and updated list of lab-related work.
-  </div>
+  </main>
 
   <footer>
     © 2026 M2D2 Lab · Wayne State University

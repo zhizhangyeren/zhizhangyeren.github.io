@@ -4,164 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>People | M2D2 Lab</title>
-
-  <style>
-    body {
-      max-width: 900px;
-      margin: 2rem auto;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      color: #222;
-    }
-    header {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.9rem;
-      font-weight: 700;
-      letter-spacing: .2px;
-    }
-    .subtitle {
-      margin: 0 0 .75rem 0;
-      font-size: 1.05rem;
-      color: #d95f02;
-      font-weight: 600;
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      border-left: 4px solid #0066cc;
-      padding-left: 0.5rem;
-      font-weight: 600;
-    }
-
-    /* person card */
-    .member {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #ddd;
-    }
-    .avatar {
-      width: 140px; height: 140px;
-      border: 1px solid #ccc; border-radius: 4px;
-      overflow: hidden; background: #f5f5f5; flex: 0 0 auto;
-    }
-    .avatar img {
-      width: 100%; height: 100%; object-fit: cover;
-      display: block;
-    }
-    .member-info { flex: 1; min-width: 250px; }
-    .name-line { font-weight: 700; font-size: 1.05rem; margin-bottom: .25rem; }
-    .role-line { font-size: .95rem; color: #444; margin-bottom: .5rem; }
-    .contact-line, .research-line, .bio-line { font-size: .9rem; margin-bottom: .4rem; }
-
-    .links a { margin-right: .75rem; white-space: nowrap; }
-    .links a::after { content: "↗"; font-size: .85em; margin-left: .2rem; color: #777; }
-
-    /* alumni list */
-    .alumni-list li { margin-bottom: .5rem; }
-
-    footer {
-      border-top: 2px solid #ddd;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <h1>M2D2 Lab</h1>
-    <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
-    <div>Department of Mechanical Engineering, Wayne State University</div>
+    <div class="brand">
+      <h1>M2D2 Lab</h1>
+      <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+      <div class="affiliation">Department of Mechanical Engineering, Wayne State University</div>
+    </div>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
-      <a href="people.html">People</a>
+      <a href="people.html" class="active">People</a>
       <a href="publications.html">Publications</a>
       <a href="openings.html">Openings</a>
     </nav>
   </header>
 
-  <!-- PI -->
-  <h2>Principal Investigator</h2>
-  <div class="member">
-    <div class="avatar">
-      <!-- Upload your photo to images/feng.jpg (or rename) -->
-      <img src="images/portrait-2.png" alt="Dr. Longsheng Feng">
-    </div>
-    <div class="member-info">
-      <div class="name-line">Dr. Longsheng Feng</div>
+  <main class="page-content">
+    <!-- PI -->
+      <h2>Principal Investigator</h2>
+      <div class="member">
+        <div class="avatar">
+          <!-- Upload your photo to images/feng.jpg (or rename) -->
+          <img src="images/portrait-2.png" alt="Dr. Longsheng Feng">
+        </div>
+        <div class="member-info">
+          <div class="name-line">Dr. Longsheng Feng</div>
 
-      <div class="contact-line">
-        Email: <a href="mailto:longsheng.feng@wayne.edu"><strong>longsheng.feng@wayne.edu</strong></a>
+          <div class="contact-line">
+            Email: <a href="mailto:longsheng.feng@wayne.edu"><strong>longsheng.feng@wayne.edu</strong></a>
+          </div>
+
+          <div class="research-line">
+            <strong>Career:</strong></br>
+            Assistant Professor, Wayne State University, 2025-Present</br>
+            Postdoctoral Researcher, Lawrence Livermore National Laboratory, 2022-2025</br>
+            Postdoctoral Researcher, The Ohio State University, 2021-2022<br>
+            <strong>Education:</strong><br>
+            Ph.D., Materials Science and Engineering, The Ohio State University. 2015-2021<br>
+            B.S., Materials Science and Engineering, Shanghai Jiao Tong University. 2011-2015<br>
+          </div>
+
+          <div class="links" style="margin-top:.5rem;">
+            <!-- Replace the # with your real URLs -->
+            <a href="https://engineering.wayne.edu/profile/ic3645" target="_blank" rel="noopener">Department page</a>
+            <a href="https://www.linkedin.com/in/longsheng-feng-a5835779" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=r3WX0rEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </div>
       </div>
 
-      <div class="research-line">
-        <strong>Career:</strong></br>
-        Assistant Professor, Wayne State University, 2025-Present</br>
-        Postdoctoral Researcher, Lawrence Livermore National Laboratory, 2022-2025</br>
-        Postdoctoral Researcher, The Ohio State University, 2021-2022<br>
-        <strong>Education:</strong><br>
-        Ph.D., Materials Science and Engineering, The Ohio State University. 2015-2021<br>
-        B.S., Materials Science and Engineering, Shanghai Jiao Tong University. 2011-2015<br>
-      </div>
+      <h2>Group Member</h2>
+      <div class="member">
+        <div class="avatar">
+          <!-- Upload your photo to images/feng.jpg (or rename) -->
+          <img src="images/Headshot-Mubasher.png" alt="Mubahser Rasheed">
+        </div>
+        <div class="member-info">
+          <div class="name-line">Mubasher Rasheed</div>
 
-      <div class="links" style="margin-top:.5rem;">
-        <!-- Replace the # with your real URLs -->
-        <a href="https://engineering.wayne.edu/profile/ic3645" target="_blank" rel="noopener">Department page</a>
-        <a href="https://www.linkedin.com/in/longsheng-feng-a5835779" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=r3WX0rEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
-    </div>
-  </div>
+          <div class="contact-line">
+            Email: <a href="mailto:rasheedmubasher70@gmail.com"><strong>rasheedmubasher70@gmail.com</strong></a>
+          </div>
 
-  <h2>Group Member</h2>
-  <div class="member">
-    <div class="avatar">
-      <!-- Upload your photo to images/feng.jpg (or rename) -->
-      <img src="images/Headshot-Mubasher.png" alt="Mubahser Rasheed">
-    </div>
-    <div class="member-info">
-      <div class="name-line">Mubasher Rasheed</div>
+          <div class="research-line">
+            <strong>Bio:</strong></br>
+            Mubasher joined M2D2 lab as a Ph.D. student in Fall 2026. He received his M.S. in Mechanical 
+            Engineering from the Pakistan Institute of Engineering and Applied Sciences (PIEAS) and his B.S. in Mechanical Engineering 
+            from the University of Engineering and Technology (UET), Lahore. His past research combines computational fluid dynamics, 
+            multiphase flow modeling, turbulence modeling, heat transfer, and phase transformation phenomena to better understand 
+            complex thermal-fluid systems. His current research focuses on mesoscale chemo-mechanical degradation modeling battery materials.
+            In his free time, he enjoys badminton and cricket.
+          </div>
 
-      <div class="contact-line">
-        Email: <a href="mailto:rasheedmubasher70@gmail.com"><strong>rasheedmubasher70@gmail.com</strong></a>
+          <div class="links" style="margin-top:.5rem;">
+            <!-- Replace the # with your real URLs -->
+          </div>
+        </div>
       </div>
-
-      <div class="research-line">
-        <strong>Bio:</strong></br>
-        Mubasher joined M2D2 lab as a Ph.D. student in Fall 2026. He received his M.S. in Mechanical 
-        Engineering from the Pakistan Institute of Engineering and Applied Sciences (PIEAS) and his B.S. in Mechanical Engineering 
-        from the University of Engineering and Technology (UET), Lahore. His past research combines computational fluid dynamics, 
-        multiphase flow modeling, turbulence modeling, heat transfer, and phase transformation phenomena to better understand 
-        complex thermal-fluid systems. His current research focuses on mesoscale chemo-mechanical degradation modeling battery materials.
-        In his free time, he enjoys badminton and cricket.
-      </div>
-
-      <div class="links" style="margin-top:.5rem;">
-        <!-- Replace the # with your real URLs -->
-      </div>
-    </div>
-  </div>
+  </main>
 
   <footer>
     © 2026 M2D2 Lab · Wayne State University

@@ -4,468 +4,414 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications | M2D2 Lab</title>
-
-  <style>
-    body {
-      max-width: 900px;
-      margin: 2rem auto;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      color: #222;
-    }
-    header {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.9rem;
-      font-weight: 700;
-      letter-spacing: .2px;
-    }
-    .subtitle {
-      margin: 0 0 .75rem 0;
-      font-size: 1.05rem;
-      color: #d95f02;
-      font-weight: 600;
-    }
-
-    /* list styling */
-    .pubs { list-style: none; padding: 0; margin: 1rem 0; }
-    .pub { margin: 0 0 1rem 0; }
-    .pub-title {
-      font-weight: 600;
-      margin: 0;
-    }
-    .pub-title a { color: #0b63c7; text-decoration: none; }
-    .pub-title a:hover { text-decoration: underline; }
-    .pub-meta { font-size: 0.95rem; color: #333; }
-
-    /* highlight your name */
-    .me { font-weight: 700; }
-
-    /* optional small separators */
-    .dot { color: #aaa; margin: 0 .3rem; }
-    footer {
-      border-top: 2px solid #ddd;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <h1>M2D2 Lab</h1>
-    <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
-    <div>Department of Mechanical Engineering, Wayne State University</div>
+    <div class="brand">
+      <h1>M2D2 Lab</h1>
+      <div class="subtitle">Microstructure Modeling &amp; Data-Driven Design Lab</div>
+      <div class="affiliation">Department of Mechanical Engineering, Wayne State University</div>
+    </div>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
+      <a href="publications.html" class="active">Publications</a>
       <a href="openings.html">Openings</a>
     </nav>
   </header>
 
-  <!-- Google Scholar -->
-  <p>
-    Full list on&nbsp;
-    <a href="https://scholar.google.com/citations?hl=en&user=r3WX0rEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener"><strong>Google Scholar</strong></a>.
-  </p>
-
-  <!-- Publications -->
-  <ul class="pubs">
-
-    <!-- Example item (copy/paste and edit) -->
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.scriptamat.2026.117438" target="_blank" rel="noopener">
-          Computational Simulation of Asymmetric Phase Transformation in Cracked Li₇La₃Zr₂O₁₂: Variant Selection and Chemo-Mechanical Implications
-        </a>
+  <main class="page-content">
+    <!-- Google Scholar -->
+      <p>
+        Full list on&nbsp;
+        <a href="https://scholar.google.com/citations?hl=en&user=r3WX0rEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener"><strong>Google Scholar</strong></a>.
       </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Bo Wang, Suyue Yuan, Kwangnam Kim, Brandon C Wood, Liwen F Wan, Tae Wook Heo <br>
-        <em>Scripta Materialia</em>
-        (2026)
-      </div>
-    </li>
+
+      <!-- Publications -->
+      <ul class="pubs">
+
+        <!-- Example item (copy/paste and edit) -->
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.scriptamat.2026.117438" target="_blank" rel="noopener">
+              Computational Simulation of Asymmetric Phase Transformation in Cracked Li₇La₃Zr₂O₁₂: Variant Selection and Chemo-Mechanical Implications
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Bo Wang, Suyue Yuan, Kwangnam Kim, Brandon C Wood, Liwen F Wan, Tae Wook Heo <br>
+            <em>Scripta Materialia</em>
+            (2026)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://link.springer.com/article/10.1007/s40830-026-00619-3" target="_blank" rel="noopener">
-          Soft and Hard Confinement Effects on Martensitic Transformation in NiTi Shape Memory Alloys: Insights from Phase-Field Simulations
-        </a>
-      </p>
-      <div class="pub-meta">
-        Hariharan Sriram, <span class="me">Longsheng Feng</span>, Zexu Chen, Yunzhi Wang <br>
-        <em>Shape Memory and Superelasticity</em>
-        (2026)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://link.springer.com/article/10.1007/s40830-026-00619-3" target="_blank" rel="noopener">
+              Soft and Hard Confinement Effects on Martensitic Transformation in NiTi Shape Memory Alloys: Insights from Phase-Field Simulations
+            </a>
+          </p>
+          <div class="pub-meta">
+            Hariharan Sriram, <span class="me">Longsheng Feng</span>, Zexu Chen, Yunzhi Wang <br>
+            <em>Shape Memory and Superelasticity</em>
+            (2026)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2026.122092" target="_blank" rel="noopener">
-          Machine learning insights into microstructural origins of transport and mechanical properties in porous microstructures
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Bo Wang, Sourav Chatterjee, Tae Wook Heo, Juergen Biener <br>
-        <em>Acta Materialia</em>
-        (2026)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2026.122092" target="_blank" rel="noopener">
+              Machine learning insights into microstructural origins of transport and mechanical properties in porous microstructures
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Bo Wang, Sourav Chatterjee, Tae Wook Heo, Juergen Biener <br>
+            <em>Acta Materialia</em>
+            (2026)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.matdes.2026.115592" target="_blank" rel="noopener">
-          Regulating dislocation-mediated plasticity in superalloys through localized stacking fault modification at γ/γ’ interface
-        </a>
-      </p>
-      <div class="pub-meta">
-        Di Qiu, <span class="me">Longsheng Feng</span>, Yunzhi Wang<br>
-        <em>Materials & Design</em>
-        (2026)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.matdes.2026.115592" target="_blank" rel="noopener">
+              Regulating dislocation-mediated plasticity in superalloys through localized stacking fault modification at γ/γ’ interface
+            </a>
+          </p>
+          <div class="pub-meta">
+            Di Qiu, <span class="me">Longsheng Feng</span>, Yunzhi Wang<br>
+            <em>Materials & Design</em>
+            (2026)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href=" https://doi.org/10.1002/sstr.202500766" target="_blank" rel="noopener">
-          Random 3D Interpenetrating Electrode Design for Energy Storage Applications
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Xinzhe Xue, Samuel Avalos, Nathan Delaney, Cassidy Tran, Yat Li, Marcus Worsley, Tae Wook Heo, Cheng Zhu <br>
-        <em>Small Structures</em>
-        (2026)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href=" https://doi.org/10.1002/sstr.202500766" target="_blank" rel="noopener">
+              Random 3D Interpenetrating Electrode Design for Energy Storage Applications
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Xinzhe Xue, Samuel Avalos, Nathan Delaney, Cassidy Tran, Yat Li, Marcus Worsley, Tae Wook Heo, Cheng Zhu <br>
+            <em>Small Structures</em>
+            (2026)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href=" https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.5c00360" target="_blank" rel="noopener">
-          Modeling Single-Crystal Battery Materials: From Fundamental Understanding to Performance Evaluation
-        </a>
-      </p>
-      <div class="pub-meta">
-        Suyue Yuan, Stephen E. Weitzner, Wonseok Jeong, Shenli Zhang, Bo Wang, <span class="me">Longsheng Feng</span>, Jonas L. Kaufman, Kwangnam Kim, Yue Qi, Liwen F. Wan<br>
-        <em>Chemical Reviews</em>
-        (2026)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href=" https://pubs.acs.org/doi/abs/10.1021/acs.chemrev.5c00360" target="_blank" rel="noopener">
+              Modeling Single-Crystal Battery Materials: From Fundamental Understanding to Performance Evaluation
+            </a>
+          </p>
+          <div class="pub-meta">
+            Suyue Yuan, Stephen E. Weitzner, Wonseok Jeong, Shenli Zhang, Bo Wang, <span class="me">Longsheng Feng</span>, Jonas L. Kaufman, Kwangnam Kim, Yue Qi, Liwen F. Wan<br>
+            <em>Chemical Reviews</em>
+            (2026)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href=" https://doi.org/10.1038/s43246-025-00895-z" target="_blank" rel="noopener">
-          Stress-dependent χ phase transformation in a Ni-based superalloy
-        </a>
-      </p>
-      <div class="pub-meta">
-        Ashton J Egan, NS Harsha Gunda, <span class="me">Longsheng Feng</span>, Maryam Ghazisaeidi, Yunzhi Wang, Sammy Tin, Michael J Mills<br>
-        <em>Communications Materials</em>
-        (2025)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href=" https://doi.org/10.1038/s43246-025-00895-z" target="_blank" rel="noopener">
+              Stress-dependent χ phase transformation in a Ni-based superalloy
+            </a>
+          </p>
+          <div class="pub-meta">
+            Ashton J Egan, NS Harsha Gunda, <span class="me">Longsheng Feng</span>, Maryam Ghazisaeidi, Yunzhi Wang, Sammy Tin, Michael J Mills<br>
+            <em>Communications Materials</em>
+            (2025)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href=" https://doi.org/10.1002/adfm.202515701" target="_blank" rel="noopener">
-          Tailored Additive Design of Scaffold‐Free Porous Mg for Ultimate Hydrogen Storage
-        </a>
-      </p>
-      <div class="pub-meta">
-        HyeonJi Kim, Younggil Song, Tae‐Hyeok Kang, <span class="me">Longsheng Feng</span>, Baptiste Gault, Aqil Jamal, Pyuck‐Pa Choi, Tae Wook Heo, Eun Seon Cho<br>
-        <em>Advanced Functional Materials</em>
-        (2025)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href=" https://doi.org/10.1002/adfm.202515701" target="_blank" rel="noopener">
+              Tailored Additive Design of Scaffold‐Free Porous Mg for Ultimate Hydrogen Storage
+            </a>
+          </p>
+          <div class="pub-meta">
+            HyeonJi Kim, Younggil Song, Tae‐Hyeok Kang, <span class="me">Longsheng Feng</span>, Baptiste Gault, Aqil Jamal, Pyuck‐Pa Choi, Tae Wook Heo, Eun Seon Cho<br>
+            <em>Advanced Functional Materials</em>
+            (2025)
+          </div>
+        </li>
     
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1002/sstr.202500081" target="_blank" rel="noopener">
-          Holistic Microstructure Control Strategies in Photopolymerization‐Induced Phase Separation of Acrylate Systems
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Sijia Huang, Donglin Li, Kun Wang, Sangil Kim, Tae Wook Heo, Juergen Biener<br>
-        <em>Small Structures</em>
-        (2025)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1002/sstr.202500081" target="_blank" rel="noopener">
+              Holistic Microstructure Control Strategies in Photopolymerization‐Induced Phase Separation of Acrylate Systems
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Sijia Huang, Donglin Li, Kun Wang, Sangil Kim, Tae Wook Heo, Juergen Biener<br>
+            <em>Small Structures</em>
+            (2025)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1007/s40820-024-01472-8" target="_blank" rel="noopener">
-          Interpenetrated Structures for Enhancing Ion Diffusion Kinetics in Electrochemical Energy Storage Devices
-        </a>
-      </p>
-      <div class="pub-meta">
-        Xinzhe Xue, <span class="me">Longsheng Feng</span>, Qiu Ren, Cassidy Tran, Samuel Eisenberg, Anica Pinongcos, Logan Valdovinos, Cathleen Hsieh, Tae Wook Heo, Marcus A Worsley, Cheng Zhu, Yat Li<br>
-        <em>Nano-Micro Letters</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1007/s40820-024-01472-8" target="_blank" rel="noopener">
+              Interpenetrated Structures for Enhancing Ion Diffusion Kinetics in Electrochemical Energy Storage Devices
+            </a>
+          </p>
+          <div class="pub-meta">
+            Xinzhe Xue, <span class="me">Longsheng Feng</span>, Qiu Ren, Cassidy Tran, Samuel Eisenberg, Anica Pinongcos, Logan Valdovinos, Cathleen Hsieh, Tae Wook Heo, Marcus A Worsley, Cheng Zhu, Yat Li<br>
+            <em>Nano-Micro Letters</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">
-          Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li7La3Zr2O12-LiCoO2
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Bo Wang, Kwangnam Kim, Liwen F Wan, Brandon C Wood, Tae Wook Heo<br>
-        <em>Energy Storage Materials</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.ensm.2024.103776" target="_blank" rel="noopener">
+              Machine-learning-assisted deciphering of microstructural effects on ionic transport in composite materials: A case study of Li7La3Zr2O12-LiCoO2
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Bo Wang, Kwangnam Kim, Liwen F Wan, Brandon C Wood, Tae Wook Heo<br>
+            <em>Energy Storage Materials</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1007/978-3-031-63937-1_3" target="_blank" rel="noopener">
-          Optimizing Local Phase Transformation in Ni-Based Superalloys Utilizing Thermodynamically Driven Design Framework and Multiscale Characterization
-        </a>
-      </p>
-      <div class="pub-meta">
-        Ashton Egan, <span class="me">Longsheng Feng</span>, Tim Smith, Yunzhi Wang, Michael Mills<br>
-        <em>Superalloys 2024</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-031-63937-1_3" target="_blank" rel="noopener">
+              Optimizing Local Phase Transformation in Ni-Based Superalloys Utilizing Thermodynamically Driven Design Framework and Multiscale Characterization
+            </a>
+          </p>
+          <div class="pub-meta">
+            Ashton Egan, <span class="me">Longsheng Feng</span>, Tim Smith, Yunzhi Wang, Michael Mills<br>
+            <em>Superalloys 2024</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">
-          3D Printed Nanoporous Separators Based on Polymerization-Induced Phase Separation for Fast-Charging, High Cycling Stability Li-Ion Batteries
-        </a>
-      </p>
-      <div class="pub-meta">
-        Meghann Ma, Asya Orhan, <span class="me">Longsheng Feng</span>, Martin Patrick de Beer, Alyssa Lanae Troksa, Natalie Hwee, Tae Wook Heo, Juergen Biener, Jiandi Wan, Jianchao Ye<br>
-        <em>ACS Applied Engineering Materials</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">
+              3D Printed Nanoporous Separators Based on Polymerization-Induced Phase Separation for Fast-Charging, High Cycling Stability Li-Ion Batteries
+            </a>
+          </p>
+          <div class="pub-meta">
+            Meghann Ma, Asya Orhan, <span class="me">Longsheng Feng</span>, Martin Patrick de Beer, Alyssa Lanae Troksa, Natalie Hwee, Tae Wook Heo, Juergen Biener, Jiandi Wan, Jianchao Ye<br>
+            <em>ACS Applied Engineering Materials</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">
-          Interpenetrating 3D Electrodes for High-Rate Alkaline Water Splitting
-        </a>
-      </p>
-      <div class="pub-meta">
-        Qiu Ren, <span class="me">Longsheng Feng</span>, Cassidy Tran, Samuel Eisenberg, Xinzhe Xue, Anica Pinongcos, Eric B Duoss, Cheng Zhu, Yat Li<br> 
-        <em>ACS Materials Letters</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://pubs.acs.org/doi/abs/10.1021/acsaenm.4c00438" target="_blank" rel="noopener">
+              Interpenetrating 3D Electrodes for High-Rate Alkaline Water Splitting
+            </a>
+          </p>
+          <div class="pub-meta">
+            Qiu Ren, <span class="me">Longsheng Feng</span>, Cassidy Tran, Samuel Eisenberg, Xinzhe Xue, Anica Pinongcos, Eric B Duoss, Cheng Zhu, Yat Li<br> 
+            <em>ACS Materials Letters</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://pubs.acs.org/doi/full/10.1021/acsami.4c03011" target="_blank" rel="noopener">
-          Integrated Framework to Model Microstructure Evolution and Decipher the Microstructure–Property Relationship in Polymeric Porous Materials
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Sijia Huang, Tae Wook Heo, Juergen Biener<br>
-        <em>ACS Applied Materials & Interfaces</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://pubs.acs.org/doi/full/10.1021/acsami.4c03011" target="_blank" rel="noopener">
+              Integrated Framework to Model Microstructure Evolution and Decipher the Microstructure–Property Relationship in Polymeric Porous Materials
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Sijia Huang, Tae Wook Heo, Juergen Biener<br>
+            <em>ACS Applied Materials & Interfaces</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.corsci.2024.112090" target="_blank" rel="noopener">
-          Localized corrosion of thermally aged Cu-containing Ni-13Cr-10Fe alloys: The role of Cu enrichment induced grain boundary sensitization
-        </a>
-      </p>
-      <div class="pub-meta">
-        Karthikeyan Hariharan, <span class="me">Longsheng Feng</span>, Kamalnath Kadirvel, Vignesh Karunakaran, Koushik Kosanam, Narasi Sridhar, Yunzhi Wang, Gerald S Frankel, Eric J Schindelholz<br>
-        <em>Corrosion Science</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.corsci.2024.112090" target="_blank" rel="noopener">
+              Localized corrosion of thermally aged Cu-containing Ni-13Cr-10Fe alloys: The role of Cu enrichment induced grain boundary sensitization
+            </a>
+          </p>
+          <div class="pub-meta">
+            Karthikeyan Hariharan, <span class="me">Longsheng Feng</span>, Kamalnath Kadirvel, Vignesh Karunakaran, Koushik Kosanam, Narasi Sridhar, Yunzhi Wang, Gerald S Frankel, Eric J Schindelholz<br>
+            <em>Corrosion Science</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.commatsci.2024.112865" target="_blank" rel="noopener">
-          Modulating superdislocation cores and planar faults of Ni3Al through applied stresses
-        </a>
-      </p>
-      <div class="pub-meta">
-         Di Qiu, <span class="me">Longsheng Feng</span>, Pengyang Zhao<br>
-        <em>Computational Materials Science</em>
-        (2024)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.commatsci.2024.112865" target="_blank" rel="noopener">
+              Modulating superdislocation cores and planar faults of Ni3Al through applied stresses
+            </a>
+          </p>
+          <div class="pub-meta">
+             Di Qiu, <span class="me">Longsheng Feng</span>, Pengyang Zhao<br>
+            <em>Computational Materials Science</em>
+            (2024)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1002/aenm.202302073" target="_blank" rel="noopener">
-          Nanocone‐Modified Surface Facilitates Gas Bubble Detachment for High‐Rate Alkaline Water Splitting
-        </a>
-      </p>
-      <div class="pub-meta">
-         Qiu Ren, <span class="me">Longsheng Feng</span>, Congwang Ye, Xinzhe Xue, Dun Lin, Samuel Eisenberg, Tianyi Kou, Eric B Duoss, Cheng Zhu, Yat Li<br>
-        <em>Advanced Energy Materials</em>
-        (2023)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1002/aenm.202302073" target="_blank" rel="noopener">
+              Nanocone‐Modified Surface Facilitates Gas Bubble Detachment for High‐Rate Alkaline Water Splitting
+            </a>
+          </p>
+          <div class="pub-meta">
+             Qiu Ren, <span class="me">Longsheng Feng</span>, Congwang Ye, Xinzhe Xue, Dun Lin, Samuel Eisenberg, Tianyi Kou, Eric B Duoss, Cheng Zhu, Yat Li<br>
+            <em>Advanced Energy Materials</em>
+            (2023)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.scriptamat.2022.115261" target="_blank" rel="noopener">
-          Taming the Pseudoelastic Response of Nitinol Using Ion Implantation
-        </a>
-      </p>
-      <div class="pub-meta">
-         Alejandro Hinojos, Daniel Hong, Hariharan Sriram, <span class="me">Longsheng Feng</span>, Chao Yang, Janelle P Wharry, Xuesong Gao, Khalid Hattar, Nan Li, Jeremy E Schaffer, Yunzhi Wang, Michael J Mills, Peter M Anderson<br>
-        <em>Scripta Materialia</em>
-        (2023)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.scriptamat.2022.115261" target="_blank" rel="noopener">
+              Taming the Pseudoelastic Response of Nitinol Using Ion Implantation
+            </a>
+          </p>
+          <div class="pub-meta">
+             Alejandro Hinojos, Daniel Hong, Hariharan Sriram, <span class="me">Longsheng Feng</span>, Chao Yang, Janelle P Wharry, Xuesong Gao, Khalid Hattar, Nan Li, Jeremy E Schaffer, Yunzhi Wang, Michael J Mills, Peter M Anderson<br>
+            <em>Scripta Materialia</em>
+            (2023)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2023.118693" target="_blank" rel="noopener">
-          Phase field modeling of shearing processes of a dual-lobed γ″|γ′|γ″ coprecipitate
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Rongpei Shi, Christopher H Zenk, Michael J Mills, Yunzhi Wang<br>
-        <em>Acta Materialia</em>
-        (2023)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2023.118693" target="_blank" rel="noopener">
+              Phase field modeling of shearing processes of a dual-lobed γ″|γ′|γ″ coprecipitate
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Rongpei Shi, Christopher H Zenk, Michael J Mills, Yunzhi Wang<br>
+            <em>Acta Materialia</em>
+            (2023)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1557/s43579-022-00251-z" target="_blank" rel="noopener">
-          Dynamic localized phase transformation at stacking faults during creep deformation and new criterion for superalloy design
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Ashton Egan, Fei Xue, Emmanuelle Marquis, Michael J Mills, Yunzhi Wang<br>
-        <em>MRS Communications</em>
-        (2022)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1557/s43579-022-00251-z" target="_blank" rel="noopener">
+              Dynamic localized phase transformation at stacking faults during creep deformation and new criterion for superalloy design
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Ashton Egan, Fei Xue, Emmanuelle Marquis, Michael J Mills, Yunzhi Wang<br>
+            <em>MRS Communications</em>
+            (2022)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2022.118287" target="_blank" rel="noopener">
-          Localized phase transformation at stacking faults and mechanism-based alloy design
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Shakthipriya Baskar Kannan, Ashton Egan, Timothy Smith, Michael J Mills, Maryam Ghazisaeidi, Yunzhi Wang<br>
-        <em>Acta Materialia</em>
-        (2022)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2022.118287" target="_blank" rel="noopener">
+              Localized phase transformation at stacking faults and mechanism-based alloy design
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Shakthipriya Baskar Kannan, Ashton Egan, Timothy Smith, Michael J Mills, Maryam Ghazisaeidi, Yunzhi Wang<br>
+            <em>Acta Materialia</em>
+            (2022)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1038/s41524-021-00660-z" target="_blank" rel="noopener">
-          Generalized stacking fault energy surface mismatch and dislocation transformation
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Michael J Mills, Yunzhi Wang<br>
-        <em>npj Computational Materials</em>
-        (2021)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1038/s41524-021-00660-z" target="_blank" rel="noopener">
+              Generalized stacking fault energy surface mismatch and dislocation transformation
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Michael J Mills, Yunzhi Wang<br>
+            <em>npj Computational Materials</em>
+            (2021)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2021.117305" target="_blank" rel="noopener">
-          Shearing mechanisms of co-precipitates in IN718
-        </a>
-      </p>
-      <div class="pub-meta">
-        Christopher H Zenk, <span class="me">Longsheng Feng</span>, Donald McAllister, Yunzhi Wang, Michael J Mills<br>
-        <em>Acta Materialia</em>
-        (2021)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2021.117305" target="_blank" rel="noopener">
+              Shearing mechanisms of co-precipitates in IN718
+            </a>
+          </p>
+          <div class="pub-meta">
+            Christopher H Zenk, <span class="me">Longsheng Feng</span>, Donald McAllister, Yunzhi Wang, Michael J Mills<br>
+            <em>Acta Materialia</em>
+            (2021)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2020.08.056" target="_blank" rel="noopener">
-          Quantitative prediction of Suzuki segregation at stacking faults of the γ’phase in Ni-base superalloys
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, You Rao, Maryam Ghazisaeidi, Michael J Mills, Yunzhi Wang<br>
-        <em>Acta Materialia</em>
-        (2020)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2020.08.056" target="_blank" rel="noopener">
+              Quantitative prediction of Suzuki segregation at stacking faults of the γ’phase in Ni-base superalloys
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, You Rao, Maryam Ghazisaeidi, Michael J Mills, Yunzhi Wang<br>
+            <em>Acta Materialia</em>
+            (2020)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1007/978-3-030-51834-9_65" target="_blank" rel="noopener">
-          Deformation Mechanisms of γ′ and γ″ Co-precipitates in IN718
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">Longsheng Feng</span>, Donald McAllister, Christopher H Zenk, Michael J Mills, Yunzhi Wang<br>
-        <em>Superalloys 2020</em>
-        (2020)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-030-51834-9_65" target="_blank" rel="noopener">
+              Deformation Mechanisms of γ′ and γ″ Co-precipitates in IN718
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">Longsheng Feng</span>, Donald McAllister, Christopher H Zenk, Michael J Mills, Yunzhi Wang<br>
+            <em>Superalloys 2020</em>
+            (2020)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1016/j.actamat.2018.09.013" target="_blank" rel="noopener">
-          Shearing of γ’particles in Co-base and Co-Ni-base superalloys
-        </a>
-      </p>
-      <div class="pub-meta">
-        <span class="me">L Feng</span>, D Lv, RK Rhein, JG Goiri, MS Titus, A Van der Ven, TM Pollock, Y Wang<br>
-        <em>Acta Materialia</em>
-        (2018)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1016/j.actamat.2018.09.013" target="_blank" rel="noopener">
+              Shearing of γ’particles in Co-base and Co-Ni-base superalloys
+            </a>
+          </p>
+          <div class="pub-meta">
+            <span class="me">L Feng</span>, D Lv, RK Rhein, JG Goiri, MS Titus, A Van der Ven, TM Pollock, Y Wang<br>
+            <em>Acta Materialia</em>
+            (2018)
+          </div>
+        </li>
 
-    <li class="pub">
-      <p class="pub-title">
-        <a href="https://doi.org/10.1007/978-3-319-89480-5_19" target="_blank" rel="noopener">
-          Characterization and Modeling of Deformation Mechanisms in Ni-Base Superalloy 718
-        </a>
-      </p>
-      <div class="pub-meta">
-        D McAllister, D Lv, <span class="me">L Feng</span>, H Deutchman, A Wessman, Y Wang, MJ Mills<br>
-        <em>Superalloy 718 & Derivatives</em>
-        (2017)
-      </div>
-    </li>
+        <li class="pub">
+          <p class="pub-title">
+            <a href="https://doi.org/10.1007/978-3-319-89480-5_19" target="_blank" rel="noopener">
+              Characterization and Modeling of Deformation Mechanisms in Ni-Base Superalloy 718
+            </a>
+          </p>
+          <div class="pub-meta">
+            D McAllister, D Lv, <span class="me">L Feng</span>, H Deutchman, A Wessman, Y Wang, MJ Mills<br>
+            <em>Superalloy 718 & Derivatives</em>
+            (2017)
+          </div>
+        </li>
     
 
-  </ul>
+      </ul>
   
-  <div style="margin-top:2rem; border-top:2px solid #ddd; padding-top:1rem;">
-    <h3>Ph.D. Dissertation</h3>
-    <p>
-      <a href="https://www.proquest.com/openview/21c4e9a5ca68d2d7867acb06e4ddec85/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" rel="noopener">
-        <strong>Modeling and Computer Simulation of Deformation Microstructures in Superalloys</strong>
-      </a><br>
-      Longsheng Feng · Ph.D. Dissertation, The Ohio State University (2021)
-    </p>
-  </div>
+      <div class="dissertation-block">
+        <h3>Ph.D. Dissertation</h3>
+        <p>
+          <a href="https://www.proquest.com/openview/21c4e9a5ca68d2d7867acb06e4ddec85/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" rel="noopener">
+            <strong>Modeling and Computer Simulation of Deformation Microstructures in Superalloys</strong>
+          </a><br>
+          Longsheng Feng · Ph.D. Dissertation, The Ohio State University (2021)
+        </p>
+      </div>
+  </main>
 
   <footer>
     © 2026 M2D2 Lab · Wayne State University
