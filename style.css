@@ -131,11 +131,12 @@ nav a.active {
 
 /* Full-width home animation strip */
 .full-bleed-media {
-  width: 100%;
+  max-width: 1120px;
+  width: calc(100% - 2rem);
+  margin: 0 auto 1.75rem auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.980fr) minmax(0, 0.988fr) minmax(0, 0.667fr) minmax(0, 1fr);
+  grid-template-columns: 0.980fr 0.988fr 0.667fr 1fr;
   gap: 0;
-  margin: 0 0 1.75rem 0;
   overflow: hidden;
   background: #f8fafc;
   line-height: 0;
