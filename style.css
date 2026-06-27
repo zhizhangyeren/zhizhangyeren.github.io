@@ -110,6 +110,11 @@ nav a.active {
   font-weight: 720;
 }
 
+.m2d2-letter {
+  color: var(--text);
+  font-weight: 850;
+}
+
 .subtitle1 {
   margin: 0;
   font-size: 1.02rem;
